@@ -1,0 +1,16 @@
+#testimonials {
+  margin: 100px auto 100px auto;
+  /* border: 2px solid red; */
+  height: 250px;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #b8e8d886;
+  border-radius: 20px;
+  font-family: "Outfit", sans-serif;
+}
+
+#testimonials h2 {
+  color: #243642;
+}

@@ -1,13 +1,17 @@
 body {
+  background-image: url("https://img.freepik.com/free-photo/eucalyptus-leaf-psd-white-marble-background_53876-103968.jpg?t=st=1730796857~exp=1730800457~hmac=f8e1dc2a756c623498252822a183c5875bf3b8c60effdf28769aac36c77ecc73&w=1060");
+  /* background-repeat: no-repeat;  */
+  background-size: contain; /* Makes the background cover the whole body */
+  background-position: center; /* Centers the background image */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

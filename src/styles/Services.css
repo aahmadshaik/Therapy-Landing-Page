@@ -1,0 +1,102 @@
+/* src/components/Services.css */
+
+.services {
+  padding: 50px 20px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.services .image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.service {
+  background: #f0f5f2;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease; /* Added opacity transition */
+  overflow: hidden;
+  position: relative;
+  opacity: 0;
+  transform: translateY(
+    20px
+  ); /* Adjusted initial position for a more subtle entrance */
+  animation: fadeIn 1.5s ease forwards;
+  cursor: pointer;
+}
+
+/* Slide-in animation for left and right */
+.from-left {
+  animation-name: slideInLeft;
+}
+
+.from-right {
+  animation-name: slideInRight;
+}
+
+/* Keyframes for sliding animations */
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Hover effect with smooth scale and shadow */
+.service:hover {
+  transform: scale(1.05); /* Change scale to 1.05 for a subtler effect */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1; /* Bring hovered service to the front */
+}
+
+.service h3 {
+  font-size: 22px;
+  color: #387478;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.service p {
+  color: gray;
+  transition: color 0.3s ease;
+  font-size: 16px;
+}
+
+.service:hover h3 {
+  color: #243642;
+}
+
+.service:hover p {
+  color: #333;
+}
